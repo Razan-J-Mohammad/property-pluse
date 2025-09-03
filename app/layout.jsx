@@ -12,7 +12,6 @@ const MainLayout = ({children}) => {
   return (
     <html lang='en'>
       <body>
-        <div>Main Layout</div>
         <div>{children}</div>
       </body>
     </html>
