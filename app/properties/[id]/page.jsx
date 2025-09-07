@@ -1,8 +1,10 @@
-import React from 'react'
-
+'use client';
 const PropartyPage = () => {
+
   return (
-    <div>PropartyPage</div>
+    <div>
+     propertyPage
+    </div>
   )
 }
 

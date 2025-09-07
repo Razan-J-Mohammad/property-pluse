@@ -1,21 +1,24 @@
+import Navbar from '@/components/Navbar';
 import React from 'react'
 import '@/assets/styles/globals.css';
+import Footer from '@/components/Footer';
 
-
-export const metadata={
-    title: 'PropertyPluse | Find The Perfect Rental',
-    description :'Find your dream rental property',
-    keywords: 'rental find rentals , find properties'
+export const metadata = {
+  title: 'PropertyPluse | Find The Perfect Rental',
+  description: 'Find your dream rental property',
+  keywords: 'rental find rentals , find properties'
 }
 
-const MainLayout = ({children}) => {
+const MainLayout = ({ children }) => {
   return (
     <html lang='en'>
       <body>
-        <div>{children}</div>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
-    
+
   )
 }
 

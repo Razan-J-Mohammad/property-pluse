@@ -1,11 +1,18 @@
-import React from 'react'
-import Link from 'next/link'
-const HomePage = () => {
+import React from 'react';
+import Link from 'next/link';
+import Hero from "@/components/Hero";
+import InfoBoxes from "@/components/InfoBoxes";
+import HomeProperties from '@/components/HomeProperties';
+import connectDB from '@/config/database';
+
+const HomePage = async () => {
+  await connectDB();
   return (
-    <div>
-    <h1 className="text-3xl">welcome</h1>
-    <Link href="/properties">show properties</Link>
-    </div>
+    <>
+      <Hero />
+      <InfoBoxes />
+      <HomeProperties />
+    </>
   )
 }
 
